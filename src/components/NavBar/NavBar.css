@@ -1,0 +1,51 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.titleNavDiv {
+  width: 300px;
+  margin: auto;
+}
+.titlenav {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-top: 7px;
+}
+
+.loginbtn {
+  background-image: url("../../assets/user.png");
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 32px;
+  width: 32px;
+}
+
+.loginbtn:hover {
+  opacity: 0.5;
+}
+.titleNavDiv :hover {
+  cursor: pointer;
+  color: rgb(160, 193, 241);
+}
+@media (max-width: 629px) {
+  .loginbtn {
+    right: 10px;
+  }
+  /* .titleNavDiv {
+    margin-left: 0;
+  } */
+}
+
+@media (max-width: 380px) {
+  .loginbtn {
+    right: 10px;
+  }
+  .titleNavDiv {
+    margin-left: 0;
+  }
+}
