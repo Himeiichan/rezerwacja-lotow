@@ -42,7 +42,7 @@ class Registration extends React.Component {
   handleRegistrationSubmit = (e) => {
     e.preventDefault();
     const { name, surname, email, password, password2 } = this.state;
-    fetch("https://biletyapp.herokuapp.com/users/register", {
+    fetch("https://rezerwacja-lotow-server.herokuapp.com/users/register", {
       method: "POST",
       body: JSON.stringify({
         name: name,

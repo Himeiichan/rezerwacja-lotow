@@ -52,7 +52,7 @@ class FlightBooking extends React.Component {
     
     if(this.state.departure===""||this.state.arrival==="")
     {
-      alert("Proszę wybrac miejsce wylotu i przylotu")
+      alert("Proszę wybrać miejsce wylotu i przylotu")
       return
     }
     if(this.state.departure===this.state.arrival)
@@ -60,7 +60,7 @@ class FlightBooking extends React.Component {
       alert("Nie ma takich lotów")
       return
     }
-    fetch("https://biletyapp.herokuapp.com/flightfind", {
+    fetch("https://rezerwacja-lotow-server.herokuapp.com/flightfind", {
       method: "POST",
       body: JSON.stringify({
         departure: this.state.departure,
@@ -83,7 +83,7 @@ class FlightBooking extends React.Component {
 
   };
   getSeatList=()=>{
-    fetch("https://biletyapp.herokuapp.com/seat", {
+    fetch("https://rezerwacja-lotow-server.herokuapp.com/seat", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
