@@ -371,7 +371,7 @@ class FlightBooking extends React.Component {
       });
       return;
     }
-    alert("Aby przejsc do płatności musisz się zalogować")
+    alert("Aby przejść do płatności musisz się zalogować")
     this.props.handleShowLoginPanel();
     return;
 
